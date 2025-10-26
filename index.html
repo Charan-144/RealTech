@@ -92,23 +92,35 @@
   }
 
   .apply-button {
-    display: block;
-    width: 220px;
-    margin: 40px auto 20px;
-    padding: 15px 0;
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px 20px;
     text-align: center;
     background: #007bff;
     color: white;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
   }
 
   .apply-button:hover {
     background: #0056b3;
+  }
+
+  .training-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+
+  .training-column {
+    flex: 1;
+    min-width: 280px;
   }
 
   footer {
@@ -129,6 +141,13 @@
     }
     header img {
       width: 90%;
+    }
+    .training-row {
+      flex-direction: column;
+    }
+    .apply-button {
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 </style>
@@ -183,7 +202,6 @@
   </div>
 
   <h2>Programs</h2>
-  <!-- AI & Full Stack Programs -->
   <div class="program-box">
     <h3>🐍 1. Artificial Intelligence & Machine Learning</h3>
     <strong>📘 Foundations</strong>
@@ -284,16 +302,31 @@
 <section id="training">
   <h2>Student Training Streams</h2>
   <div class="program-box">
-    <strong>1st & 2nd Year Students:</strong>
-    <ul>
-      <li>Basics and AI front-end concepts (HTML, CSS, JavaScript).</li>
-      <li>Build AI-based applications.</li>
-    </ul>
-    <strong>3rd & 4th Year Students:</strong>
-    <ul>
-      <li>Full Stack Development in-depth.</li>
-      <li>Work on real-time, open-source projects.</li>
-    </ul>
+    <div class="training-row">
+      <div class="training-column">
+        <strong>1st & 2nd Year Students:</strong>
+        <ul>
+          <li>Basics and AI front-end concepts (HTML, CSS, JavaScript).</li>
+          <li>Build AI-based applications.</li>
+        </ul>
+      </div>
+      <div class="training-column">
+        <a href="https://forms.gle/Yg86CygVNpqfGSyK6" target="_blank" class="apply-button">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="training-row">
+      <div class="training-column">
+        <strong>3rd & 4th Year Students:</strong>
+        <ul>
+          <li>Full Stack Development in-depth.</li>
+          <li>Work on real-time, open-source projects.</li>
+        </ul>
+      </div>
+      <div class="training-column">
+        <a href="https://forms.gle/pzRbpoFFgspp99F2A" target="_blank" class="apply-button">Apply Now</a>
+      </div>
+    </div>
   </div>
 </section>
 
